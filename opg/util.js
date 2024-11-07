@@ -11,7 +11,7 @@ function createElement(type, text, className) {
 }
 
 function isNonEmptyString(value) {
-	return typeof value === "string" && value.trim().length > 0;
+	return typeof value === "string" && value.trim().length > 1;
 }
 
 function isNonEmptyNumber(value) {
