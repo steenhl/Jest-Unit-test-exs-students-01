@@ -1,10 +1,16 @@
 import "./styles.css";
 const { generateText, createElement, isNonEmptyString, isNonEmptyNumber } = require("./opg/util");
+const { add } = require("./opg/calculate");
+const { fetchData, fetchDataCatchError } = require("./opg/fetchData");
 
 const initApp = () => {
 	// Initializes the app, registers the button click listener
 	const newUserButton = document.querySelector("#btnAddUser");
 	newUserButton.addEventListener("click", addUser);
+	// console.log(add(`e3`, 4));
+
+	// fetchData("/api/users");
+	fetchDataCatchError("/api/users");
 };
 
 const addUser = () => {

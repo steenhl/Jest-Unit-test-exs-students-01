@@ -35,5 +35,13 @@ module.exports = {
 		static: {
 			directory: path.join(__dirname, "./"),
 		},
+		proxy: [
+			{
+				context: ["/api"],
+				target: "http://localhost:5001",
+				pathRewrite: { "^/api": "" },
+				changeOrigin: true,
+			},
+		],
 	},
 };

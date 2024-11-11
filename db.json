@@ -1,0 +1,10 @@
+{
+	"posts": [
+		{ "id": 1, "title": "Hello World" },
+		{ "id": 2, "title": "JSON Server is Awesome" }
+	],
+	"users": [
+		{ "id": 1, "name": "John Doe" },
+		{ "id": 2, "name": "Jane Smith" }
+	]
+}
